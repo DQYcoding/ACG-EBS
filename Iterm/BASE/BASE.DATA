@@ -1,0 +1,166 @@
+RUNSPEC
+SAVE
+/
+TITLE
+  horizontal well
+
+DIMENS
+    100 100 1  /
+
+OIL
+ 
+WATER
+ 
+FIELD
+
+FMTIN
+FMTOUT
+--UNIFIN
+--UNIFOUT
+--MONITOR
+ 
+RSSPEC
+ 
+NOINSPEC
+
+TABDIMS
+    1/
+
+REGDIMS
+    1    1    0    0  /
+
+WELLDIMS
+   30    10    20   30 /
+
+START
+   1 'JAN' 2000  /
+
+GRID
+INCLUDE
+  'permx.dat' 
+/
+
+
+COPY
+PERMX        PERMY   /
+/
+
+EQUALS
+     'DX'     100    /
+     'DY'     100    /
+     'DZ'     20    /
+     'PERMZ'  1      /
+     'PORO'   0.2     /
+     'TOPS'   4800    /     
+/
+
+INIT
+
+RPTGRID
+   0 /
+
+EDIT
+
+PROPS
+
+SWFN
+0.3	0		0
+0.9	1		0
+/
+
+SOF2
+0.30       0.0
+0.9       1.0
+/
+
+PVDO
+ 14.70    1.05   2.2
+ 10014.70 1.01    2.2 /
+
+DENSITY
+56.93 62.428 0.0516
+/
+
+PVTW
+6000 1.0042 3.744E-6 0.5 0.0 /
+
+ROCK
+6000 0.00006103 /
+
+
+RPTPROPS
+   8*0  /
+
+REGIONS
+
+SOLUTION    ============================================================
+INCLUDE
+solution.dat /
+
+RPTRST
+BASIC=2  /
+
+
+SUMMARY   =============================================================
+EXCEL
+FOPT
+FWIT
+FWPT
+FWIR
+FOPR
+FWPR
+FWCT
+FPR
+RPTONLY
+/
+
+SCHEDULE  =============================================================
+DIMPLICT
+
+TUNING
+1 10 8* /
+2* 1e-07 0.0001 10 0.011 1e-06 0.001 3* /
+2* 50 1 24 8 4* /
+
+MESSAGES
+100000 100000 100000 100000 100000 1 100000 100000 130000 130000 100000 1 /
+
+TUNINGDP
+4* /
+
+RPTSCHED                                         FIELD   16:55 18 APR 86
+'PRES' 'SOIL' 'SWAT' 'RESTART=2' 'FIP=2' 'WELLS=2' 'SUMMARY=2' 'CPU=2' 
+'NEWTON=2' 'OILAPI' 'FIPTR=2' 'TBLK' 'FIPSALT=2' 'TUNING' 'SURFBLK' 'SURFADS' 
+'FIPSURF=2' /
+RPTRST  
+ BASIC=3 FREQ=1 FLOWS STREAM=300 /
+SKIP100
+
+RPTLINFS
+200 /
+
+OPTIONFS
+/
+
+FSSOLVE
+/
+
+TUNEFS1D
+/
+
+TUNEFSPR
+/ 
+
+TUNEFSSA
+5* NO /
+
+ENDSKIP
+
+
+INCLUDE
+Wellpara.dat  /
+
+INCLUDE
+schedule.dat  /
+
+END

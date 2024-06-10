@@ -1,0 +1,15 @@
+WELSPECS
+I1   horizontal   30    30   1*     OIL  7* /
+I2   horizontal   70    30   1*     OIL  7* /
+I3   horizontal   30    70   1*     OIL  7* /
+I4   horizontal   70    70   1*     OIL  7* /
+P1   horizontal   5     5    1*     WAT  7* /
+P2   horizontal   50    5    1*     WAT  7* /
+P3   horizontal   95    5    1*     WAT  7* /
+P4   horizontal   5     50   1*     WAT  7* /
+P5   horizontal   50    50   1*     WAT  7* /
+P6   horizontal   95    50   1*     WAT  7* /
+P7   horizontal   5     95   1*     WAT  7* /
+P8   horizontal   50    95   1*     WAT  7* /
+P9   horizontal   95    95   1*     WAT  7* /
+/ 
