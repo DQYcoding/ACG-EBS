@@ -1,0 +1,23 @@
+NEXTSTEP
+1 /
+COMPDAT 
+-- WELL        I    J    K1  K2    Sat.   CF   DIAM  KH SKIN ND   DIR   Ro 
+--'SANJ-01'   55  190    2    2    'OPEN'  2*  0.200  3*      'Z'  1* /
+'INJ-01'        30    30      1  1  'OPEN'  2*  0.5  3*  'Z' 1*  /  
+'INJ-02'      80    30      1  1  'OPEN'  2*  0.5  3*  'Z' 1*  /  
+'INJ-03'       30   80      1  1  'OPEN'  2*  0.5  3*  'Z' 1*  /  
+'INJ-04'      80  80      1  1  'OPEN'  2*  0.5  3*  'Z' 1*  /    
+'PRO-01'      1    1      1  1  'OPEN'  2*  0.2  3*  'Z' 1*  /  
+'PRO-02'    50    1       1  1  'OPEN'  2*  0.2  3*  'Z' 1*  /  
+'PRO-03'    100    1     1  1  'OPEN'  2*  0.2  3*  'Z' 1*  /  
+'PRO-04'      1  50       1  1  'OPEN'  2*  0.2  3*  'Z' 1*  /  
+'PRO-05'     50 50       1  1  'OPEN'  2*  0.2  3*  'Z' 1*  /  
+'PRO-06'     100 50     1  1  'OPEN'  2*  0.2  3*  'Z' 1*  /  
+'PRO-07'       1 100     1  1  'OPEN'  2*  0.2  3*  'Z' 1*  /  
+'PRO-08'     50 100     1  1  'OPEN'  2*  0.2  3*  'Z' 1*  /  
+'PRO-09'     100 100     1  1  'OPEN'  2*  0.2  3*  'Z' 1*  /   
+/
+
+GRUPTREE 
+   'horizontal'     'FIELD'  /
+/
