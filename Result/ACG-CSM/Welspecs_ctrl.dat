@@ -1,0 +1,14 @@
+WELSPECS 
+IV1  hori  1  74  1*  WATER/
+IV2  hori  92  51  1*  WATER/
+IV3  hori  1  13  1*  WATER/
+IV4  hori  94  73  1*  WATER/
+/ 
+WELSPECS 
+PH1  hori  68  38  1*  OIL/
+PH2  hori  57  12  1*  OIL/
+PH3  hori  35  100  1*  OIL/
+PH4  hori  85  12  1*  OIL/
+PH5  hori  20  74  1*  OIL/
+PH6  hori  37  84  1*  OIL/
+/ 

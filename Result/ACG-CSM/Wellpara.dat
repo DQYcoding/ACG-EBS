@@ -1,0 +1,12 @@
+INCLUDE
+  'Welspecs_ctrl.dat' 
+/
+INCLUDE
+  'Compdat_ctrl.dat' 
+/
+INCLUDE
+  'Wconprod_ctrl.dat' 
+/
+INCLUDE
+  'Wconinje_ctrl.dat' 
+/
